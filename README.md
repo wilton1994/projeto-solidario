@@ -50,3 +50,7 @@ As mensagens de commit podem seguir uma forma simples inspirada em Conventional 
 ## Publicação
 
 O projeto está preparado para hospedagem estática, como GitHub Pages. Como os caminhos utilizados são relativos, as páginas, estilos, scripts e imagens funcionam quando o repositório é publicado dessa forma.
+
+## Acessibilidade
+
+O projeto utiliza HTML semântico, textos alternativos nas imagens, foco visível para navegação pelo teclado e atributos ARIA em componentes como o menu e o modal.
