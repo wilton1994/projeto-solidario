@@ -145,3 +145,13 @@ body.alto-contraste .menu-principal a:hover, body.alto-contraste .menu-principal
     .acoes-topo { margin-left: auto; }
     .contraste-toggle { padding: 7px 9px; }
 }
+
+/* Melhora a navegação usando teclado */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #e8a317;
+    outline-offset: 3px;
+}
