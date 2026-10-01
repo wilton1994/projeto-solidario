@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulário de participação no Projeto Solidário.">
+    <title>Cadastro - Projeto Solidário</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+<header>
+    <h1>Projeto Solidário</h1>
+    <div class="acoes-topo">
+        <button class="contraste-toggle" type="button" aria-pressed="false">Alto contraste</button>
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">☰</button>
+    </div>
+    <nav class="menu-principal" id="menu-principal" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <div class="submenu">
+            <a href="projetos.html">Projetos</a>
+            <div class="dropdown">
+                <a href="projetos.html#alimentos">Doação de alimentos</a>
+                <a href="projetos.html#voluntariado">Voluntariado</a>
+            </div>
+        </div>
+        <a href="cadastro.html" aria-current="page">Cadastro</a>
+    </nav>
+</header>
+<main id="conteudo">
+<section>
+    <h2>Dados para participar</h2>
+    <p>Preencha os campos abaixo. Os campos obrigatórios são validados pelo navegador.</p>
+    <div id="alerta-sucesso" class="alerta alerta-sucesso" role="status" tabindex="-1">
+        <strong>Cadastro realizado com sucesso.</strong> Seus dados foram preenchidos corretamente para esta demonstração.
+    </div>
+    <form id="form-cadastro" action="#" method="post">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <div class="campo"><label for="nome">Nome completo:</label><input type="text" id="nome" name="nome" placeholder="Digite seu nome" required></div>
+            <div class="campo"><label for="email">E-mail:</label><input type="email" id="email" name="email" placeholder="nome@exemplo.com" required></div>
+            <div class="campo"><label for="nascimento">Data de nascimento:</label><input type="date" id="nascimento" name="nascimento" required></div>
+            <div class="campo"><label for="cpf">CPF:</label><input type="text" id="cpf" name="cpf" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}" placeholder="000.000.000-00" required></div>
+        </fieldset>
+        <fieldset>
+            <legend>Contato</legend>
+            <div class="campo"><label for="telefone">Telefone:</label><input type="tel" id="telefone" name="telefone" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}" placeholder="(11) 99999-9999" required></div>
+        </fieldset>
+        <fieldset>
+            <legend>Endereço</legend>
+            <div class="campo"><label for="cep">CEP:</label><input type="text" id="cep" name="cep" pattern="[0-9]{5}-[0-9]{3}" placeholder="00000-000" required></div>
+            <div class="campo"><label for="endereco">Endereço:</label><input type="text" id="endereco" name="endereco" placeholder="Rua e número" required></div>
+            <div class="campo"><label for="cidade">Cidade:</label><input type="text" id="cidade" name="cidade" placeholder="Cidade" required></div>
+            <div class="campo"><label for="estado">Estado:</label><input type="text" id="estado" name="estado" maxlength="2" pattern="[A-Za-z]{2}" placeholder="SP" required></div>
+        </fieldset>
+        <div class="acoes-formulario">
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </div>
+    </form>
+</section>
+</main>
+<footer><p>Projeto social - 2026</p></footer>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

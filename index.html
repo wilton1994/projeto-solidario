@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projeto Solidário com ações de doação e voluntariado.">
+    <title>Projeto Solidário</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+<header>
+    <h1>Projeto Solidário</h1>
+    <div class="acoes-topo">
+        <button class="contraste-toggle" type="button" aria-pressed="false">Alto contraste</button>
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">☰</button>
+    </div>
+    <nav class="menu-principal" id="menu-principal" aria-label="Navegação principal">
+        <a href="index.html" aria-current="page">Início</a>
+        <div class="submenu">
+            <a href="projetos.html">Projetos</a>
+            <div class="dropdown">
+                <a href="projetos.html#alimentos">Doação de alimentos</a>
+                <a href="projetos.html#voluntariado">Voluntariado</a>
+            </div>
+        </div>
+        <a href="cadastro.html">Cadastro</a>
+    </nav>
+</header>
+<main id="conteudo">
+    <section class="grid" aria-labelledby="titulo-sobre">
+        <div class="col-8">
+            <h2 id="titulo-sobre">Sobre o projeto</h2>
+            <p>O projeto busca ajudar pessoas por meio de ações sociais, doações e trabalho voluntário.</p>
+            <p>As atividades são apresentadas de forma simples para que qualquer pessoa possa conhecer os projetos e descobrir como participar.</p>
+            <picture>
+                <source srcset="assets/img/voluntarios.webp" type="image/webp">
+                <img src="assets/img/voluntarios.jpg" alt="Voluntários participando de uma ação social" width="900" height="600">
+            </picture>
+            <p><a class="botao" href="projetos.html">Conhecer projetos</a></p>
+        </div>
+        <aside class="col-4 card" aria-labelledby="titulo-ajudar">
+            <h3 id="titulo-ajudar">Como ajudar</h3>
+            <p>É possível participar como voluntário ou colaborar com doações.</p>
+            <a href="cadastro.html">Quero participar</a>
+        </aside>
+    </section>
+    <section aria-labelledby="titulo-contato">
+        <h2 id="titulo-contato">Contato</h2>
+        <p>E-mail: contato@projetosolidario.com</p>
+        <p>Telefone: (11) 99999-9999</p>
+        <p>São Paulo - SP</p>
+    </section>
+</main>
+<footer><p>Projeto social - 2026</p></footer>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

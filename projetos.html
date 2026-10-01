@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ações de doação e voluntariado do Projeto Solidário.">
+    <title>Projetos - Projeto Solidário</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+<header>
+    <h1>Projeto Solidário</h1>
+    <div class="acoes-topo">
+        <button class="contraste-toggle" type="button" aria-pressed="false">Alto contraste</button>
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">☰</button>
+    </div>
+    <nav class="menu-principal" id="menu-principal" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <div class="submenu">
+            <a href="projetos.html" aria-current="page">Projetos</a>
+            <div class="dropdown">
+                <a href="#alimentos">Doação de alimentos</a>
+                <a href="#voluntariado">Voluntariado</a>
+            </div>
+        </div>
+        <a href="cadastro.html">Cadastro</a>
+    </nav>
+</header>
+<main id="conteudo">
+    <section aria-labelledby="titulo-projetos">
+        <h2 id="titulo-projetos">Projetos em andamento</h2>
+        <p>Conheça algumas formas de participação.</p>
+        <picture>
+            <source srcset="assets/img/doacao-alimentos.webp" type="image/webp">
+            <img src="assets/img/doacao-alimentos.jpg" alt="Voluntários organizando alimentos para doação" width="900" height="600" loading="lazy">
+        </picture>
+        <div class="projetos">
+            <article class="card" id="alimentos">
+                <span class="badge">Projeto ativo</span>
+                <h3>Doação de alimentos</h3>
+                <p>Arrecadação de alimentos para famílias que precisam de apoio.</p>
+            </article>
+            <article class="card" id="voluntariado">
+                <span class="badge">Voluntariado</span>
+                <h3>Ações voluntárias</h3>
+                <p>Participação de voluntários na organização e entrega das doações.</p>
+            </article>
+        </div>
+    </section>
+    <section class="card" aria-labelledby="titulo-participar">
+        <h2 id="titulo-participar">Quer saber mais?</h2>
+        <p>Veja uma mensagem com informações sobre como participar.</p>
+        <button type="button" data-abrir-modal aria-haspopup="dialog">Ver informações</button>
+    </section>
+</main>
+<div class="modal" id="modal-info" role="dialog" aria-modal="true" aria-labelledby="titulo-modal" aria-hidden="true">
+    <div class="modal-conteudo">
+        <div class="modal-topo">
+            <h2 id="titulo-modal">Informações</h2>
+            <button class="fechar-modal" type="button" data-fechar-modal aria-label="Fechar janela">×</button>
+        </div>
+        <p>Obrigado pelo interesse em participar. Você pode preencher o cadastro para informar seus dados de contato.</p>
+        <a class="botao" href="cadastro.html">Ir para cadastro</a>
+    </div>
+</div>
+<footer><p>Projeto social - 2026</p></footer>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
